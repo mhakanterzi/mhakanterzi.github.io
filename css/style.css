@@ -6,11 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #c2d5ca;
-    background-image: url("../images/background.jpg");
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f5f1;
     background-size: cover;
-    background-position: cover;
+    background-position: center;
+    color: #333;
 }
 
 /* Navigasyon Stili */
@@ -24,78 +24,117 @@ nav {
 }
 
 .nav-left h1 {
-    font-size: 24px;
+    font-size: 2em;
     margin-left: 10px;
+    letter-spacing: 1px;
 }
 
 .nav-right a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin:15px;
 }
 
 .nav-right a:hover {
-    color: #4CAF50; /* Hover rengi */
+    color: #4CAF50;
 }
 
 /* Bölüm Stili */
 section {
-    display: flex;
-    flex-direction: column;
-    padding: 60px ;
-    text-align: center; /* Metni ortalamak için */
+    padding: 60px;
+    text-align: center;
 }
 
-#clock{
+#home h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    margin-top: 20px;
     color: #074a23;
-    font-size: 2.5em;
-    margin-bottom: 20px; 
 }
 
-#inf h2 {
-    margin-bottom: 20px; 
+#home h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #074a23;
 }
 
-#inf p {
-    margin-bottom: 10px; 
-}
-#about h2 {
-    margin-bottom: 20px; 
+#home p {
+    font-size: 1.5em;
+    color: #555;
 }
 
-#about p {
-    margin-bottom: 10px; 
+#clock {
+    color: #074a23;
+    font-size: 3em;
+    margin-top: 20px;
 }
 
+/* Contact Form */
 #contact {
     padding: 40px 20px;
-    text-align: center;
+    background-color: #fff;
+    /*margin-top: 30px;*/
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    color: #074a23;
+    font-size: 2em;
 }
 
 #contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    max-width: 400px;
+    gap: 15px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
-#contact input, 
+#contact input,
 #contact textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 #contact button {
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 15px 30px;
+    background-color: #074a23;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 1.1em;
 }
 
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    #home h1 {
+        font-size: 2.5em;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+
+    #clock {
+        font-size: 2.5em;
+    }
+}

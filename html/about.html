@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakan Terzi | About</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
-<script src="../javascript/clock.js"></script>
+<script src="../javascript/showmore.js"></script>
+
 <body>
     <!-- Navigasyon -->
     <nav>
@@ -20,14 +21,23 @@
         </div>
     </nav>
 
+
     <!-- Ana İçerik -->
-    <section id="about">   
+    <section id="about">
         <h2>About Me</h2>
-        <h2>Hello, I'm Hakan.</h2>
-        <p> I'm a computer engineering student and passionate about coding.</p>
-        <p> I enjoy hiking, playing sports like football and basketball, and gaming.</p>
-        <p> Currently, I work as a full-stack developer, but I'm also developing my skills in cybersecurity.</p>
+        <h3>Hello, I'm Hakan.</h3>
+        <p id="para1">I'm a computer engineering student and passionate about coding.</p>
+        <p id="para2" style="display:none;">I enjoy hiking, playing sports like football and basketball, and gaming.</p>
+        <p id="para3" style="display:none;">Currently, I work as a full-stack developer, but I'm also developing my skills in cybersecurity.</p>
+        <button id="toggleBtn" onclick="toggleText()">Show More</button>
     </section>
+    
+
+    <div class="profile-images">
+        <img src="../images/profil.jpeg" alt="Profile Image"/>
+        <img src="../images/RESİMLERİM (377).JPG" alt="Another Image"/>
+    </div>
+    
 
     <section id="inf">
         <h2>Contact Information</h2>

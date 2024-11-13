@@ -6,7 +6,9 @@
     <title>Hakan Terzi | About</title>
     <link rel="stylesheet" href="../css/about.css">
 </head>
+<script src="../javascript/photos.js"></script>
 <script src="../javascript/showmore.js"></script>
+
 
 <body>
     <!-- Navigasyon -->
@@ -34,8 +36,13 @@
     
 
     <div class="profile-images">
-        <img src="../images/profil.jpeg" alt="Profile Image"/>
-        <img src="../images/RESİMLERİM (377).JPG" alt="Another Image"/>
+        <img src="../images/profil.jpeg" alt="Profile Image" class="image" onclick="openModal(this)">
+        <img src="../images/RESİMLERİM (377).JPG" alt="Another Image" class="image" onclick="openModal(this)">
+        <img src="../images/profil2.jpeg" alt="Profile Image2" class="image" onclick="openModal(this)">
+    </div>
+    
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImage" class="modal-content" src="">
     </div>
     
 

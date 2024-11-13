@@ -39,6 +39,14 @@ nav {
     text-align: center;
 }
 
+
+#projects a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
 #projects h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -67,7 +75,6 @@ nav {
     color: #fff;
     border: none;
     border-radius: 5px;
-    margin: 0 5px;
     cursor: pointer;
 }
 
@@ -103,6 +110,6 @@ nav {
 
     .filter-buttons {
         display: flex;
-        margin-top: 20px;
+        flex-direction: column;
     }
 }

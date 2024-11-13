@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakan Terzi | Projects</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <script src="../javascript/filter.js"></script>
 </head>
-<script src="../javascript/clock.js"></script>
 <body>
     <!-- Navigasyon -->
     <nav>
         <div class="nav-left">
             <h1>Hakan Terzi</h1>
-        </div>  
+        </div>
         <div class="nav-right">
             <a href="../index.html">Home</a>
             <a href="about.html">About</a>
@@ -23,7 +23,40 @@
     <!-- Ana İçerik -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>List of your projects.</p>
+        <p>Select a category to filter projects:</p>
+        
+        <!-- Filtreleme Butonları -->
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web Development</button>
+            <button onclick="filterProjects('cybersecurity')">Cybersecurity</button>
+            <button onclick="filterProjects('data')">Data Science</button>
+        </div>
+
+        <!-- Projeler -->
+        <div id="project-list">
+            <div class="project-item" data-category="web" onclick="openProject(this)">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my projects and skills.</p>
+            </div>
+            <div class="project-item" data-category="web" onclick="openProject(this)">
+                <h3>Vehicle Organize Project</h3>
+                <p>I developed a vehicle organization project using React and WebAPI, with MSSQL as the database.</p>
+                <p>GitHub:<a href="https://github.com/mhakanterzi/Vehicle-Sales-Project-dotnetCore-React.git">React Project</a></p>
+            </div>
+            <div class="project-item" data-category="cybersecurity" onclick="openProject(this)">
+                <h3>Security Dashboard</h3>
+                <p>A real-time monitoring dashboard for security analytics.</p>
+            </div>
+            <div class="project-item" data-category="data" onclick="openProject(this)">
+                <h3>Data Analysis Tool</h3>
+                <p>A tool for data processing and visualization using Python.</p>
+            </div>
+            <div class="project-item" data-category="web" onclick="openProject(this)">
+                <h3>Blog Platform</h3>
+                <p>A full-stack blog platform built with modern web technologies.</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>

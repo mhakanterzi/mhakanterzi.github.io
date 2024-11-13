@@ -7,8 +7,6 @@ function updateClock() {
     document.getElementById('clock').textContent = timeString;
 }
 
-// Saat her saniye güncelleniyor
 setInterval(updateClock, 1000);
 
-// Sayfa yüklendiğinde saati göster
 updateClock();

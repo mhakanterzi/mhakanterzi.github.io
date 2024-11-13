@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c2d5ca;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #074a23;
+    color: #fff;
+}
+
+.nav-left h1 {
+    font-size: 2em;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.nav-right a:hover {
+    color: #4CAF50;
+}
+
+#projects {
+    padding: 60px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #074a23;
+}
+#projects h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #074a23;
+}
+
+#projects p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+.filter-buttons {
+    margin-top: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 15px;
+    background-color: #074a23;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    background-color: #4CAF50;
+}
+
+.project-item {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-item h3 {
+    color: #074a23;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        margin-top: 20px;
+    }
+}

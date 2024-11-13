@@ -7,10 +7,10 @@ function toggleText() {
     if (para2.style.display === "none") {
         para2.style.display = "block";
         para3.style.display = "block";
-        button.innerHTML = "Show Less"; // Buton yazısını değiştir
+        button.innerHTML = "Show Less"; 
     } else {
         para2.style.display = "none";
         para3.style.display = "none";
-        button.innerHTML = "Show More"; // Buton yazısını değiştir
+        button.innerHTML = "Show More"; 
     }
 }

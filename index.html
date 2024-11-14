@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <script src="javascript/clock.js"></script>
+<script src="javascript/mail.js"></script>
+
 
 <body>
-    <!-- Navigasyon -->
     <nav>
         <div class="nav-left">
             <h1>Hakan Terzi</h1>
@@ -21,7 +22,6 @@
         </div>
     </nav>
 
-    <!-- Ana İçerik -->
     <section id="home">
         <h1>Welcome</h1>
         <h2>I'm Hakan</h2>
@@ -32,13 +32,15 @@
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="mailto:trz.hakanterzi@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="form">
+            <input id="name" type="text" name="name" placeholder="Your Name" required>
+            <input id="email" type="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button onclick="sendForm()" type="button">Send</button>
+        </div>
+        <div id="formMessage" class="form-message"></div> 
     </section>
+    
     
 </body>
 </html>

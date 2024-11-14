@@ -90,7 +90,7 @@ section {
     font-size: 2em;
 }
 
-#contact form {
+#contact .form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,6 +115,14 @@ section {
     cursor: pointer;
     font-size: 1.1em;
 }
+
+.form-message {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.1em;
+    text-align: center;
+}
+
 
 @media (max-width: 768px) {
     nav {

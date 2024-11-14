@@ -8,7 +8,6 @@
     <script src="../javascript/filter.js"></script>
 </head>
 <body>
-    <!-- Navigasyon -->
     <nav>
         <div class="nav-left">
             <h1>Hakan Terzi</h1>
@@ -20,12 +19,10 @@
         </div>
     </nav>
 
-    <!-- Ana İçerik -->
     <section id="projects">
         <h2>My Projects</h2>
         <p>Select a category to filter projects:</p>
         
-        <!-- Filtreleme Butonları -->
         <div class="filter-buttons">
             <button onclick="filterProjects('all')">All</button>
             <button onclick="filterProjects('web')">Web Development</button>
@@ -34,7 +31,6 @@
             <button onclick="filterProjects('personal')">Personal Projects</button>
         </div>
 
-        <!-- Projeler -->
         <div id="project-list">
             <div class="project-item" data-category="web" onclick="openProject(this)">
                 <h3>Portfolio Website</h3>

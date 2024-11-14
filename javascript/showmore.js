@@ -3,7 +3,6 @@ function toggleText() {
     var para3 = document.getElementById("para3");
     var button = document.getElementById("toggleBtn");
 
-    // Metni açma veya kapama
     if (para2.style.display === "none") {
         para2.style.display = "block";
         para3.style.display = "block";

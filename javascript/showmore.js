@@ -1,7 +1,7 @@
 function toggleText() {
-    var para2 = document.getElementById("para2");
-    var para3 = document.getElementById("para3");
-    var button = document.getElementById("toggleBtn");
+    const para2 = document.getElementById("para2");
+    const para3 = document.getElementById("para3");
+    const button = document.getElementById("toggleBtn");
 
     if (para2.style.display === "none") {
         para2.style.display = "block";
